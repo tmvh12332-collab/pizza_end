@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴 | PIZZARIA 피자리아</title>
+  <link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">PIZZA<span>RIA</span><small>FRESHLY BAKED, MADE WITH LOVE</small></a>
+  <input class="menu-toggle" type="checkbox" id="menu-toggle"><label class="hamburger" for="menu-toggle" aria-label="메뉴 열기"><span></span><span></span><span></span></label>
+  <nav class="main-nav" aria-label="주요 메뉴"><a href="index.html">홈</a><a class="active" href="menu.html">메뉴</a><a href="about.html">가게 소개</a><a href="location.html">오시는 길</a><a href="contact.html">예약·문의</a></nav>
+</header>
+<main>
+  <section class="page-hero menu-hero"><p class="eyebrow">OUR MENU</p><h1>취향대로 고르는<br><em>맛있는 한 판</em></h1><p>클래식부터 시그니처까지, 오늘의 기분에 맞춰 골라보세요.</p></section>
+  <section class="section">
+    <div class="section-heading"><p class="eyebrow">PIZZARIA FAVORITES</p><h2>대표 메뉴</h2><p>메뉴와 가격은 홈페이지 디자인을 위한 예시입니다.</p></div>
+    <div class="food-grid menu-grid">
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=85" alt="페퍼로니 피자"><div class="food-info"><span class="tag">BEST</span><h3>클래식 페퍼로니</h3><p>페퍼로니, 모차렐라, 토마토 소스</p><strong>18,900원</strong></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=900&q=85" alt="마르게리타 피자"><div class="food-info"><h3>마르게리타</h3><p>토마토, 생모차렐라, 바질</p><strong>17,900원</strong></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=85" alt="버섯 피자"><div class="food-info"><span class="tag tag-green">SIGNATURE</span><h3>트러플 머쉬룸</h3><p>양송이, 새송이, 트러플 오일, 크림</p><strong>21,900원</strong></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=85" alt="치즈가 풍부한 피자"><div class="food-info"><h3>치즈 포레스트</h3><p>모차렐라, 체더, 고르곤졸라, 파르메산</p><strong>20,900원</strong></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=900&q=85" alt="불고기 토핑 피자"><div class="food-info"><h3>K-불고기</h3><p>불고기, 양파, 파프리카, 갈릭 소스</p><strong>22,900원</strong></div></article>
+      <article class="food-card"><img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=900&q=85" alt="하와이안 피자"><div class="food-info"><h3>트로피컬 하와이안</h3><p>햄, 파인애플, 모차렐라, 스위트 칠리</p><strong>19,900원</strong></div></article>
+    </div>
+  </section>
+
+  <section class="event-banner"><span class="event-kicker">TWO MONTHS ONLY</span><h2>두 달간 진행하는 특별 이벤트!</h2><p>나만의 커스텀 피자 만들기</p><strong>도우부터 토핑까지, 좋아하는 것만 골라 담으세요.</strong><a href="#custom-pizza" class="btn btn-light">지금 나만의 피자 만들기 ↓</a><small>※ 이벤트 기간 및 실제 판매 여부는 과제용 설정입니다.</small></section>
+
+  <section class="section custom-section" id="custom-pizza">
+    <div class="section-heading"><p class="eyebrow">CREATE YOUR OWN</p><h2>나만의 피자 만들기</h2><p>왼쪽에서 도우를, 오른쪽에서 토핑을 선택해 중앙의 피자를 완성해보세요.</p></div>
+    <form class="builder" action="#" method="get">
+      <aside class="builder-panel dough-panel"><h3>01. 도우 선택</h3><p class="panel-caption">원하는 식감을 골라주세요.</p>
+        <label class="choice-card"><input type="radio" name="dough" value="original" checked><span><b>🍞 오리지널 도우</b><small>폭신하고 쫄깃한 기본 도우</small><strong>기본 +0원</strong></span></label>
+        <label class="choice-card"><input type="radio" name="dough" value="thin"><span><b>🥨 씬 도우</b><small>얇고 바삭한 식감</small><strong>기본 +0원</strong></span></label>
+        <label class="choice-card"><input type="radio" name="dough" value="cheese"><span><b>🧀 치즈 크러스트</b><small>가장자리에 고소한 치즈</small><strong>+3,000원</strong></span></label>
+        <p class="mini-note">도우 선택은 화면 미리보기용입니다.</p>
+      </aside>
+
+      <div class="pizza-stage">
+        <div class="stage-heading"><span>02. YOUR PIZZA</span><b>나의 피자 미리보기</b></div>
+        <div class="pizza-preview" aria-label="선택한 토핑이 표시되는 피자 미리보기">
+          <div class="crust"><div class="sauce"></div>
+            <span class="topping pepperoni">●</span><span class="topping mushroom">●</span><span class="topping olive">●</span><span class="topping onion">●</span><span class="topping pineapple">●</span><span class="topping jalapeno">●</span><span class="topping corn">●</span><span class="topping bacon">●</span><span class="topping tomato">●</span><span class="topping paprika">●</span>
+          </div>
+        </div>
+        <p class="preview-help">오른쪽 토핑 체크박스를 선택하면 피자 위에 재료가 나타납니다.</p>
+        <div class="selected-guide"><span>선택 재료</span><b>체크한 토핑이 피자에 표시됩니다.</b></div>
+      </div>
+
+      <aside class="builder-panel topping-panel"><h3>03. 토핑 추가</h3><p class="panel-caption">원하는 재료를 체크하세요.</p>
+        <div class="topping-list">
+          <label><input id="pepperoni" type="checkbox"><span>🍖 페퍼로니</span><b>+1,500원</b></label>
+          <label><input id="mushroom" type="checkbox"><span>🍄 양송이버섯</span><b>+1,000원</b></label>
+          <label><input id="olive" type="checkbox"><span>🫒 블랙올리브</span><b>+700원</b></label>
+          <label><input id="onion" type="checkbox"><span>🧅 양파</span><b>+500원</b></label>
+          <label><input id="pineapple" type="checkbox"><span>🍍 파인애플</span><b>+1,000원</b></label>
+          <label><input id="jalapeno" type="checkbox"><span>🌶️ 할라피뇨</span><b>+800원</b></label>
+          <label><input id="corn" type="checkbox"><span>🌽 옥수수</span><b>+700원</b></label>
+          <label><input id="bacon" type="checkbox"><span>🥓 베이컨</span><b>+1,500원</b></label>
+          <label><input id="tomato" type="checkbox"><span>🍅 토마토</span><b>+800원</b></label>
+          <label><input id="paprika" type="checkbox"><span>🫑 파프리카</span><b>+700원</b></label>
+        </div>
+      </aside>
+    </form>
+    <div class="price-summary"><div><span>커스텀 피자 기본 가격</span><strong>18,900원</strong></div><p>최종 금액은 기본 가격 + 도우 추가금 + 선택 토핑 금액입니다.</p><p class="notice">중요: HTML/CSS만 사용하는 과제 조건으로 제작되어 체크 상태에 따른 합계 자동 계산과 실제 주문 전송은 작동하지 않습니다. 표시된 재료별 가격을 참고해 합계를 확인하는 시연용 화면입니다.</p></div>
+  </section>
+
+  <section class="section order-section">
+    <div class="section-heading"><p class="eyebrow">ORDER DETAILS</p><h2>주문 정보 및 결제 방법</h2><p>아래 입력 칸은 화면 구성 예시이며 실제 결제 기능은 연결되어 있지 않습니다.</p></div>
+    <div class="order-layout">
+      <form class="order-form" action="#" method="get">
+        <h3>배달 / 주문 정보</h3>
+        <label>이름<input type="text" name="customer" placeholder="주문자 이름"></label>
+        <label>전화번호<input type="tel" name="phone" placeholder="010-0000-0000"></label>
+        <label>주소<input type="text" name="address" placeholder="도로명 주소 및 상세 주소"></label>
+        <label>요청 사항<textarea name="request" rows="3" placeholder="예: 벨을 누르지 말아주세요."></textarea></label>
+      </form>
+      <div class="payment-box"><h3>결제 방법 선택</h3>
+        <label><input type="radio" name="payment" checked> 간편결제 (카카오페이·네이버페이)</label>
+        <label><input type="radio" name="payment"> 카드결제</label>
+        <label><input type="radio" name="payment"> 현금결제</label>
+        <label><input type="radio" name="payment"> 계좌이체</label>
+        <button class="btn btn-dark" type="button">주문 내용 확인하기</button>
+        <small>실제 결제 및 주문 접수 기능은 구현되지 않은 디자인 시안입니다.</small>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><a class="footer-brand" href="index.html">PIZZARIA</a><p>좋은 재료, 따뜻한 오븐, 함께하는 즐거움.</p><small>© 2026 PIZZARIA. DEMO WEBSITE FOR CLASS PROJECT.</small></footer>
+</body>
+</html>
